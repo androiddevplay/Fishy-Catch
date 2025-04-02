@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".playFrames.PlayFrame">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/play_scr_m"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_scr_1">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/play_top_line_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/play_top_line_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.085" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:splitMotionEvents="false"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="@+id/play_top_line_1"
+            app:layout_constraintTop_toTopOf="@+id/play_top_line_0">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05" />
+
+            <ImageView
+                android:id="@+id/play_level_img"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.175"
+                android:src="@drawable/level_1_btn" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075" />
+
+            <TextView
+                android:id="@+id/time_level_tv"
+                style="@style/FishyTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:textSize="18sp"
+                android:background="@drawable/levels_back_sh"
+                android:paddingVertical="10dp"
+                android:text="@string/time"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/play_top_line_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.095"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/play_top_line_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.16"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:splitMotionEvents="false"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="@+id/play_top_line_3"
+            app:layout_constraintTop_toTopOf="@+id/play_top_line_2">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.08" />
+
+            <TextView
+                android:id="@+id/required_sigh_tv"
+                style="@style/FishyTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.41"
+                android:textSize="16sp"
+                android:background="@drawable/levels_back_sh"
+                android:paddingVertical="10dp"
+                android:text="@string/req"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.02" />
+
+            <TextView
+                android:id="@+id/cau_fish_tv"
+                style="@style/FishyTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.41"
+                android:textSize="16sp"
+                android:background="@drawable/levels_back_sh"
+                android:paddingVertical="10dp"
+                android:text="@string/сau"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/play_line_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/play_line_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.825"/>
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/catch_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/catch_btn"
+            android:layout_marginBottom="7dp"
+            app:layout_constraintTop_toTopOf="@+id/play_line_2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@+id/play_line_1"
+            app:layout_constraintBottom_toBottomOf="@+id/play_line_2"
+            android:orientation="vertical"
+            android:weightSum="3">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    tools:ignore="NestedWeights" />
+                <RelativeLayout
+                    android:visibility="invisible"
+                    android:id="@+id/fish_cont_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4">
+                    <ImageView
+                        android:id="@+id/fish_img_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fish_just_3"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    tools:ignore="NestedWeights" />
+                <RelativeLayout
+                    android:visibility="invisible"
+                    android:id="@+id/fish_cont_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4">
+                    <ImageView
+                        android:id="@+id/fish_img_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fish_just_3"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    tools:ignore="NestedWeights" />
+                <RelativeLayout
+                    android:visibility="invisible"
+                    android:id="@+id/fish_cont_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4">
+                    <ImageView
+                        android:id="@+id/fish_img_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fish_just_3"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/win_loose_scr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

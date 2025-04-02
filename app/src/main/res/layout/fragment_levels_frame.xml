@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".playFrames.LevelsFrame">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/other_scr"
+        android:splitMotionEvents="false">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="@color/black" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/level_ch_line_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/level_ch_line_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:splitMotionEvents="false"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="@+id/level_ch_line_1"
+            app:layout_constraintTop_toTopOf="@+id/level_ch_line_0">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075" />
+
+            <ImageView
+                android:id="@+id/levels_back_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.175"
+                android:src="@drawable/back_btn" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075" />
+
+            <TextView
+                style="@style/FishyTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/levels_back_sh"
+                android:paddingVertical="10dp"
+                android:text="@string/choose_l"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:splitMotionEvents="false"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="@+id/level_ch_line_2"
+            app:layout_constraintTop_toTopOf="@+id/level_ch_line_1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="4"
+                android:splitMotionEvents="false"
+                android:orientation="vertical"
+                android:background="@drawable/levels_back_sh">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="NestedWeights">
+                    <ImageView
+                        android:id="@+id/level_1_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginVertical="5dp"
+                        android:src="@drawable/level_1_btn"/>
+                    <ImageView
+                        android:id="@+id/level_2_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginVertical="5dp"
+                        android:src="@drawable/level_2_btn"/>
+                    <ImageView
+                        android:id="@+id/level_3_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginVertical="5dp"
+                        android:src="@drawable/level_3_btn"/>
+                    <ImageView
+                        android:id="@+id/level_4_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginVertical="5dp"
+                        android:src="@drawable/level_4_btn"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="NestedWeights">
+                    <ImageView
+                        android:id="@+id/level_5_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginVertical="5dp"
+                        android:src="@drawable/level_5_btn"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    style="@style/FishyTextStyle"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="NestedWeights"
+                    android:text="@string/more_c">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/level_ch_line_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8325" />
+
+        <ImageView
+            android:id="@+id/levels_next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            app:layout_constraintTop_toTopOf="@+id/level_ch_line_2"
+            app:layout_constraintBottom_toBottomOf="@+id/level_ch_line_3"
+            android:src="@drawable/next_btn" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/level_ch_line_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.97" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

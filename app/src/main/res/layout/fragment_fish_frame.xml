@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".playFrames.FishFrame">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:splitMotionEvents="false"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="@color/black" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/fish_ch_line_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/fish_ch_line_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="@+id/fish_ch_line_1"
+            app:layout_constraintTop_toTopOf="@+id/fish_ch_line_0">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075" />
+
+            <ImageView
+                android:id="@+id/fish_back_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.175"
+                android:src="@drawable/back_btn" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.075" />
+
+            <TextView
+                style="@style/FishyTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/levels_back_sh"
+                android:paddingVertical="10dp"
+                android:text="@string/choose_f"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="15dp"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:splitMotionEvents="false"
+            app:layout_constraintBottom_toBottomOf="@+id/fish_ch_line_2"
+            app:layout_constraintTop_toTopOf="@+id/fish_ch_line_1">
+
+            <ImageView
+                android:id="@+id/fish_choose_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/fish_just_1" />
+
+            <ImageView
+                android:id="@+id/fish_choose_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/fish_just_2" />
+
+            <ImageView
+                android:id="@+id/fish_choose_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/fish_just_3" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/fish_ch_line_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8325" />
+
+        <ImageView
+            android:id="@+id/from_fish_play_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            app:layout_constraintTop_toTopOf="@+id/fish_ch_line_2"
+            app:layout_constraintBottom_toBottomOf="@+id/fish_ch_line_3"
+            android:src="@drawable/play_btn" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/fish_ch_line_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.97" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

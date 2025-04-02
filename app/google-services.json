@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "528412881416",
+    "project_id": "fishy-catch",
+    "storage_bucket": "fishy-catch.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528412881416:android:19b2976a3278ce0b6d57bd",
+        "android_client_info": {
+          "package_name": "com.profycatc.catchyf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ6x5u8IxDK8I1iylYzoHU2zu4ZW180f0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Profycatcef" parent="Theme.Design.NoActionBar">
+        <item name="android:windowBackground">@drawable/def_scr</item>
+        <item name="fontFamily">@font/galindo_regular</item>
+    </style>
+
+    <style name="Theme.Profycatcef" parent="Base.Theme.Profycatcef" />
+    <style name="FishyTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDy">-2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:textSize">27sp</item>
+        <item name="marginHorizontal">11dp</item>
+    </style>
+</resources>

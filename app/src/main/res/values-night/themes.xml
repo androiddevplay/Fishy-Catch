@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Profycatcef" parent="Theme.Design.NoActionBar">
+        <item name="android:windowBackground">@drawable/def_scr</item>
+        <item name="fontFamily">@font/galindo_regular</item>
+    </style>
+</resources>

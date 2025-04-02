@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fishy Catch</string>
+    <string name="time">Time : %s</string>
+    <string name="welcome">Welcome to fish catch !</string>
+    <string name="so_relax">So relax, be fast and have some fun !</string>
+    <string name="choose_bg">Choose your preferred place to play</string>
+    <string name="choose_fish">And fish to catch and try yourself in pro fisher role !</string>
+    <string name="you_will">You will see fishes that swim from different parts of the screen</string>
+    <string name="as_soon">As soon as you will see the "Catch button" - tap it ! Because you will have very limited time for this</string>
+    <string name="the_higher">The higher level the less time you will have to catch the fish</string>
+    <string name="each">Each level also have different required fishes that you need to catch to pass it</string>
+    <string name="choose_f">Choose Fish</string>
+    <string name="choose_b">Choose Bg</string>
+    <string name="iron_key_main">2117f7d9d</string>
+    <string name="key_inter_set">2kr9mrdniwfzxt4u</string>
+    <string name="choose_l">Choose Level</string>
+    <string name="more_c">More coming soon…</string>
+    <string name="req">Req : %s</string>
+    <string name="сau">Caught : %s</string>
+
+</resources>
